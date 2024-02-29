@@ -1,0 +1,8 @@
+<search>
+  <input type="search" placeholder="City name" v-model="cityName" @input="findCities" @focus="setShowList(true)">
+  <transition name="slide-fade">
+  <ul v-if="computedCitiesList.length && showList">
+    <li v-for="(obj,key) in computedCitiesList" :key="key" @click="getForecast(obj)">{{obj.name}}, {{obj.country}}</li>
+  </ul>
+  </transition>
+</search>

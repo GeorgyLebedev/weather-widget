@@ -1,0 +1,14 @@
+<section class="next-days-weather-container">
+  <div v-for="item in data" class="next-day-weather">
+    <section class="day-name-section">
+      <h1>{{ item.dayText }}</h1>
+      <p>{{ item.dayMonth }}</p>
+    </section>
+    <section class="temperature-and-icon-section">
+      <img :src="item.weatherIconData" alt="">
+      <p>{{ item.temperature }}</p>
+    </section>
+    <p class="weather-text">{{ item.weather }}</p>
+
+  </div>
+</section>

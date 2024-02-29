@@ -1,0 +1,44 @@
+.next-days-weather-container{
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+@media screen and (min-width: 600px) {
+  .next-days-weather-container{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .next-days-weather-container{
+    width: 100%;
+    max-width: 400px;
+  }
+}
+.next-day-weather{
+  background: linear-gradient(white, #d6ebff);
+  color: #424242;
+  height: 100%;
+  width: 30%;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px gainsboro;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day-name-section p,.weather-text{
+  color: #989898;
+}
+.temperature-and-icon-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  >img{
+    height: 80px;
+    padding: 10px;
+  }
+}
+
